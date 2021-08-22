@@ -1,0 +1,32 @@
+{
+  "name": "timer",
+  "version": "0.0.1",
+  "description": "A package to Time complicated Workflows",
+  "main": "/lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "jest",
+    "lint": "eslint"
+  },
+  "keywords": [
+    "Timer"
+  ],
+  "author": "CEbbinghaus",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.1",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "eslint": "^7.32.0",
+    "typescript-eslint": "^0.0.1-alpha.0"
+  }
+}

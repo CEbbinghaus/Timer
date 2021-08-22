@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "ES5",
+		"declaration": true,
+		"allowJs": true,
+		"types": ["node", "jest"],
+		"sourceMap": true,
+		"sourceRoot": "src",
+		"outDir": "lib"
+	},
+	"include": [
+		"src"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
