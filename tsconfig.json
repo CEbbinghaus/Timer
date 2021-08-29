@@ -3,7 +3,6 @@
 		"target": "ES5",
 		"declaration": true,
 		"allowJs": true,
-		"types": ["node", "jest"],
 		"sourceMap": true,
 		"sourceRoot": "src",
 		"outDir": "lib"
@@ -12,6 +11,8 @@
 		"src"
 	],
 	"exclude": [
-		"node_modules"
+		"node_modules",
+		"tests",
+		"lib"
 	]
 }
