@@ -3,9 +3,13 @@ import {performance} from "./performance"
 
 class LappedWatch
 {
-	startTime = performance.now();
+	startTime: number = performance.now();
 	// Time since the last "lap"
-	lastTime = 0;
+	lastTime: number = null;
+
+	constructor(){
+		this.lastTime = this.startTime;
+	}
 
 	Lap(): number {
 		const currentTime = performance.now();
@@ -21,7 +25,7 @@ class LappedWatch
 	}
 }
 
-export class PerfTimer {
+export class PerformanceTimer {
 	
 	private stopwatches: Array<LappedWatch> = [];
 	private log = "";
@@ -75,7 +79,7 @@ export class PerfTimer {
 
 export class StaticTimer
 {
-	private static instance: PerfTimer = new PerfTimer();
+	private static instance: PerformanceTimer = new PerformanceTimer();
 
 	public static StartTimer(name: string): void
 	{

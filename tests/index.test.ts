@@ -1,6 +1,11 @@
-import {PerfTimer} from "../src/index"
+import {PerformanceTimer} from "../src/index"
 
 test("Functioning Constructor", () => {
-	const timer = new PerfTimer();
-	expect(timer).toBeInstanceOf(PerfTimer);
+	const timer = new PerformanceTimer();
+	expect(timer).toBeInstanceOf(PerformanceTimer);
+});
+
+test("Able to measure basic task", () => {
+  const timer = new PerformanceTimer();
+  expect(timer).toBeInstanceOf(PerformanceTimer);
 });

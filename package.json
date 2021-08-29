@@ -10,7 +10,8 @@
   "scripts": {
     "build": "tsc -p .",
     "test": "jest",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "npm run build"
   },
   "keywords": [
     "Timer"
