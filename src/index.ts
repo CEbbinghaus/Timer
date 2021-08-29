@@ -39,7 +39,7 @@ export class PerformanceTimer {
 	}
 	
 	private get TabLevel(): string{
-		return "\t".repeat(this.TotalStopwatches);
+		return ("\t").repeat(this.TotalStopwatches);
 	} 
 
 	public StartTimer(name: string): void{
