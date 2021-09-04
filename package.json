@@ -11,7 +11,7 @@
     "build": "tsc",
     "test": "jest",
     "lint": "eslint",
-    "postinstall": "npm run build"
+    "postinstall": "node ./util/PostInstal.js"
   },
   "keywords": [
     "Timer"
@@ -30,6 +30,7 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "eslint": "^7.32.0",
+    "npm": "^7.21.1",
     "typescript-eslint": "^0.0.1-alpha.0"
   }
 }
