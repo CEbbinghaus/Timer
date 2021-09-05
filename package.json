@@ -1,6 +1,6 @@
 {
   "name": "timer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A package to Time complicated Workflows",
   "main": "/lib/index.js",
   "typings": "lib/index.d.ts",
@@ -25,12 +25,13 @@
   },
   "devDependencies": {
     "@types/node": "^16.7.1",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "eslint": "^7.32.0"
   },
   "dependencies": {
     "chalk": "^4.1.2",
-    "eslint": "^7.32.0",
-    "npm": "^7.21.1",
-    "typescript-eslint": "^0.0.1-alpha.0"
+    "npm": "^7.21.1"
   }
 }

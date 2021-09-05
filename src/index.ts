@@ -1,4 +1,4 @@
-import {performance} from "./performance"
+import {performance} from "./performance";
 
 
 class LappedWatch
@@ -13,14 +13,14 @@ class LappedWatch
 
 	Lap(): number {
 		const currentTime = performance.now();
-		var diff = currentTime - this.lastTime;
+		const diff = currentTime - this.lastTime;
 		this.lastTime = currentTime;
 		return diff;
 	}
 
 	Finalize(): number {
 		const currentTime = performance.now();
-		var total = currentTime - this.startTime;
+		const total = currentTime - this.startTime;
 		return total;
 	}
 }
@@ -51,11 +51,11 @@ export class PerformanceTimer {
 		if (this.TotalStopwatches <= 0)
 			return;
 
-		var isLast = this.TotalStopwatches == 1;
+		const isLast = this.TotalStopwatches == 1;
 
-		var indenting = isLast ? "" : this.TabLevel;
+		const indenting = isLast ? "" : this.TabLevel;
 
-		this.log += `${indenting}Total: ${this.LastWatch.Finalize()}ms\n`
+		this.log += `${indenting}Total: ${this.LastWatch.Finalize()}ms\n`;
 
 		this.stopwatches.splice(this.TotalStopwatches - 1, 1);
 
